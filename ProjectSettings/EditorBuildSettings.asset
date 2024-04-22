@@ -5,8 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Samples~ 1/hellocardboard-unity/Scenes/VrMode.unity
+    guid: 4812ec05e87b8414abcdfe0d625c0e60
   - enabled: 1
     path: Assets/Samples~ 1/hellocardboard-unity/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bfe6fdcea469c484fa0f37b06e87ae0e, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a5c6e2e237da24d7da3d2f3ccc899ffe, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: fa4be181bba6142679047e098d7fd401, type: 2}
