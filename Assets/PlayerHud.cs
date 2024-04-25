@@ -32,7 +32,7 @@ public class PlayerHud : NetworkBehaviour
             gameObject.GetComponent<Camera>().enabled = false;
             gameObject.GetComponent<TrackedPoseDriver>().enabled = false;
             gameObject.GetComponent<FlareLayer>().enabled = false;
-            //gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
     

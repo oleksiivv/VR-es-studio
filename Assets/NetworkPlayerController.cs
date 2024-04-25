@@ -32,7 +32,7 @@ public class NetworkPlayerController : NetworkBehaviour
     {
         //Debug.Log(rotation.Value.y);
         gameObject.transform.eulerAngles = rotation.Value;
-        gameObject.transform.GetChild(0).transform.eulerAngles = rotation.Value;
+        //gameObject.transform.GetChild(0).transform.eulerAngles = rotation.Value;
     }
     
     private void UpdateClient()

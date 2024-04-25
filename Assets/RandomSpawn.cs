@@ -7,7 +7,7 @@ public class RandomSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(Random.Range(-3, 3), 0, Random.Range(-3, 3));
+        transform.position = new Vector3(Random.Range(-3, 3), 8, Random.Range(-3, 3));
     }
 
     // Update is called once per frame
