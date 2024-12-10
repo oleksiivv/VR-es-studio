@@ -27,16 +27,22 @@ public class NetworkUIManager : MonoBehaviour
         startHost.onClick.AddListener(async () =>
         {
             StartHost();
+            startHost.gameObject.SetActive(false);
+            startClient.gameObject.SetActive(false);
         });
         
         startServer.onClick.AddListener(() =>
         {
             StartServer();
+            startHost.gameObject.SetActive(false);
+            startClient.gameObject.SetActive(false);
         });
         
         startClient.onClick.AddListener(async () =>
         {
             StartClient();
+            startHost.gameObject.SetActive(false);
+            startClient.gameObject.SetActive(false);
         });
     }
     

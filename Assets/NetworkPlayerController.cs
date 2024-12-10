@@ -8,9 +8,13 @@ public class NetworkPlayerController : NetworkBehaviour
     public Vector3 defaultPosition;
     
     public NetworkVariable<Vector3> rotation = new NetworkVariable<Vector3>();
+
+    //public NetworkVariable<Vector3> position = new NetworkVariable<Vector3>();
     
     public Vector3 oldRotation;
     
+    //public GameObject parent;
+
     void Start()
     {
         //transform.position = defaultPosition + new Vector3(Random.Range(-3, 3), 0, Random.Range(-3, 3));
@@ -32,12 +36,14 @@ public class NetworkPlayerController : NetworkBehaviour
     {
         //Debug.Log(rotation.Value.y);
         gameObject.transform.eulerAngles = rotation.Value;
+        //parent.gameObject.transform.position = position.Value;
         //gameObject.transform.GetChild(0).transform.eulerAngles = rotation.Value;
     }
     
     private void UpdateClient()
     {
         var currentRotation = gameObject.transform.eulerAngles;
+        //var currentPosition = gameObject.transform.position;
         
         if(Input.GetKey(KeyCode.RightArrow))
         {
@@ -60,4 +66,5 @@ public class NetworkPlayerController : NetworkBehaviour
     {
         rotation.Value = currentRotation;
     }
+
 }

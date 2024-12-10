@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples~ 1/hellocardboard-unity/Scenes/VrMode.unity
     guid: 4812ec05e87b8414abcdfe0d625c0e60
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples~ 1/hellocardboard-unity/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
+  - enabled: 0
+    path: Assets/Scenes/Scene0.unity
+    guid: 342dd5ac7cb5e4bed8343caa9f9f7732
+  - enabled: 1
+    path: Assets/Scenes/MainScene1Building.unity
+    guid: 6ca1ffa915d544fdf960401abe5c5b3a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bfe6fdcea469c484fa0f37b06e87ae0e, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a5c6e2e237da24d7da3d2f3ccc899ffe, type: 2}

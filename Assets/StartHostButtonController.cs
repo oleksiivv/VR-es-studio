@@ -9,5 +9,6 @@ public class StartHostButtonController : MonoBehaviour
     public void OnPointerEnter()
     {
         networkUIManager.StartHost();
+        gameObject.transform.position += new Vector3(100, 100, 100);
     }
 }
